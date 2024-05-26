@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="tree-container">
+        <div class="tree">
+            <ul>
+                <li>
+                    <span class="box inti mati"><img src="gambar/kamid.png"><br>KAMID<br>(1 Januari 19365)</span>
+                    <span class="box mati"><img src="gambar/kamilah.png"><br>KAMILAH<br>(1 Januari 1942)</span>
+                    <ul>
+                        <li style="background-color:rgb(237, 139, 94);">
+                            <span class="box"><img src="gambar/bahruddin.png"><br>BAHRUDDIN<br>(Boyolali, 8 September 1963)</span>
+                            <span class="box"><img src="gambar/syarifah.png"><br>Syarifah Indriyati<br>(?????, ?????)</span>
+                            <span class="box"><img src="gambar/titi.png"><br>Titi Sugiharti<br>(?????, ?????)</span>
+                            <ul>
+                                <li><span class="box"><img src="gambar/syafruddin.png"><br>Syafruddin Bustan<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/arsyad.png"><br>Arsyad Taufiq<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/rais.png"><br>Rais Hidayat<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/zarah.png"><br>Zarah Farhani<br>(?????, ?????)</span></li>
+                            </ul>
+                            
+                        </li>
+                        <li style="background-color: rgb(198, 237, 21);">
+                            <span class="box"><img src="gambar/nur.png"><br>NUR FATONI<br>(Boyolali, 14 Maret 1966)</span>
+                            <span class="box"><img src="gambar/etik.png"><br>Etik Ihtiyatmi<br>(?????, ?????)</span>
+                            <ul>
+                                <li><span class="box"><img src="gambar/ghozy.png"><br>Ghozy Ikbar Fathoni<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/dhiaulhaq.png"><br>Dhiaulhaq Nafiul Alam<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/mutia.png"><br>Mutia Shabiha Azzahra Fatoni<br>(?????, ?????)</span></li>
+                            </ul>
+                        </li>
+                        <li style="background-color: aquamarine;">
+                            <span class="box"><img src="gambar/eni.png"><br>ENI WIDJAYATI<br>(Boyolali, 3 April 1968)</span>
+                            <span class="box"><img src="gambar/wahyu.png"><br>Wahyu Purnomojati<br>(?????, ?????)</span>
+                            <ul>
+                                <li><span class="box"><img src="gambar/shofiyyul.png"><br>Shofiyyul Fuad<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/riqqoh.png"><br>Riqqoh Khofiya<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/ahmad.png"><br>Ahmad Adl Barelvi<br>(?????, ?????)</span></li>
+                            </ul>
+                        </li>
+                        <li style="background-color: rgb(226, 59, 168);">
+                            <span class="box"><img src="gambar/fatkhul.png"><br>MUH. FATKHUL IHSAN<br>(Boyolali, 3 Januari 1975)</span>
+                            <span class="box"><img src="gambar/wartini.png"><br>Wartini<br>(?????, ?????)</span>
+                            <ul>
+                                <li><span class="box"><img src="gambar/roid.png"><br>Roid Muflih Ihsanuddin<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/fikri.png"><br>Fikri Dzaky Ihsanuddin<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/hilmi.png"><br>Hilmi Falih Ihsanuddin<br>(?????, ?????)</span></li>
+                            </ul>
+                        </li>
+                        <li style="background-color: rgb(8, 194, 132);">
+                            <span class="box"><img src="gambar/badrus.png"><br>BADRUS ZAMAN<br>(1 Juli 2024)</span>
+                            <span class="box"><img src="gambar/sri.png"><br>Sri Utami<br>(?????, ?????)</span>
+                            <ul>
+                                <li><span class="box"><img src="gambar/asma.png"><br>Asma’ Huwaida Zami<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/khaula.png"><br>Khaula Tsabita Zami<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/tsalitsa.png"><br>Tsalitsa Rasyida Zami<br>(?????, ?????)</span></li>
+                            </ul>
+                        </li>
+                        <li style="background-color: rgb(223, 244, 86);">
+                            <span class="box"><img src="gambar/fitrotun.png"><br>FITROTUN RAHMAWATI<br>(Boyolali, 27 September 1979)</span>
+                            <span class="box"><img src="gambar/safruddin.png"><br>Safruddin<br>(?????, ?????)</span>
+                            <ul>
+                                <li><span class="box"><img src="gambar/zidan.png"><br>Muhammad Zidan Dicky Nasuha<br>(?????, ?????)</span></li>
+                                <li><span class="box"><img src="gambar/nazla.png"><br>Nazla Uzlifatis Safira<br>(?????, ?????)</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const defaultImageSrc = 'gambar/noface.png';
+    
+    // Ambil semua elemen gambar di halaman
+    const images = document.querySelectorAll('img');
+
+    images.forEach(function(image) {
+        // Tambahkan event listener untuk 'error' pada setiap gambar
+        image.addEventListener('error', function() {
+            // Ganti sumber gambar ke defaultImageSrc jika gambar gagal dimuat
+            this.src = defaultImageSrc;
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
